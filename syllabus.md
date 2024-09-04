@@ -20,7 +20,6 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 ### 1.2.2 & 1.2.4 Use examples to explain sort and search alogrithms
 
 ### 1.2.5 Compare and describe the efficiencies of the sort and search algorithms using Big-O notation for time complexity (worst case)
-<!Generate a table of time complexities>
 | Algorithm | Time Complexity (worst case) | Space Complexity (Not tested) |
 |-----------|------------------------------|--------------------------------|
 | Bubble sort | O(n^2) | O(1) |
@@ -365,13 +364,12 @@ erDiagram
 
 ### 3.3.6 Understand how NoSQL database management system addresses the shortcomings of relational database management system (SQL).
 ### 3.3.7 Explain the applications of SQL and NoSQL.
-### 3.3.8 Use a programming language to work with both SQL and NoSQL databases.
+### 3.3.8 Use a programming language to work with both SQL and NoSQL databases. [Guide](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/static/Quick%20Reference%20Guide.pdf)
 ### 3.3.9 Understand the need for privacy and integrity of data.
 ### 3.3.10 Describe methods to protect data.
 ### 3.3.11 Explain the difference between backup and archive.
 ### 3.3.12 Describe the need for version control and naming convention.
-### 3.3.13 Explain how data in Singapore is protected under the Personal Data Protection Act to govern the
-collection, use and disclosure of personal data. 
+### 3.3.13 Explain how data in Singapore is protected under the Personal Data Protection Act to govern the collection, use and disclosure of personal data. 
 
 ## 3.4 Social, Ethical, Legal and Economic Issues
 
@@ -383,14 +381,26 @@ left intentionally blank
 ## 4.1 Fundamentals of Computer Networks
 
 ### 4.1.1 Explain the concepts of LAN, WAN, intranet and the structure of the internet.
+- Network: A group of devices that are connected together to communicate and share resources
 - LAN: Local Area Network, a network that connects computers in a small area, eg: home, school, office
 - WAN: Wide Area Network, a network that connects computers over a large geographical area, eg: country, continent
 - Intranet: A private network that is only accessible to an organization's staff
 
 ### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
+- IP Addressing: A unique identifier for each device connected to a Network 
+- DNS: A system that translates domain names to IP addresses
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 ### 4.1.4 Explain how data is transmitted in a packet-switching network.
 ### 4.1.5 Explain client-server architecture.
 ### 4.1.6 Implement an iterative server with socket programming. Given the server code, students should be able to implement the client code for a given scenario, and vice-versa, e.g. for a tic-tac-toe game. 
 
+## 4.2 Web Applications 
+### 4.2.1 Describe the differences between web applications and native applications.
+### 4.2.2 State and apply usability principles in the design of web applications.
+### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to:
+– accept user input (text and image file uploads)
+– process the input on the local server
+– store and retrieve data
+– display the output (as formatted text/images/table).
+### 4.2.4 Test a web application on a local server
