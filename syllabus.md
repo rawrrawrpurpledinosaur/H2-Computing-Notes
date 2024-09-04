@@ -364,10 +364,14 @@ erDiagram
 
 ### 3.3.6 Understand how NoSQL database management system addresses the shortcomings of relational database management system (SQL).
 ### 3.3.7 Explain the applications of SQL and NoSQL.
+- SQL: 
+<li>  </li>
 ### 3.3.8 Use a programming language to work with both SQL and NoSQL databases. [Guide](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/static/Quick%20Reference%20Guide.pdf)
 ### 3.3.9 Understand the need for privacy and integrity of data.
 ### 3.3.10 Describe methods to protect data.
 ### 3.3.11 Explain the difference between backup and archive.
+- Backup: A copy of data that can be used to restore the original data in case of loss or corruption
+- Archive: A copy of data that is stored for long-term retention and is not intended to be used for recovery purposes
 ### 3.3.12 Describe the need for version control and naming convention.
 ### 3.3.13 Explain how data in Singapore is protected under the Personal Data Protection Act to govern the collection, use and disclosure of personal data. 
 
@@ -404,3 +408,8 @@ left intentionally blank
 – store and retrieve data
 – display the output (as formatted text/images/table).
 ### 4.2.4 Test a web application on a local server
+
+## 4.3 Network Security
+### 4.3.1 Understand how malware (e.g. worms and viruses) and denial of service (DOS) attacks can compromise computer systems.
+### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
+### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
