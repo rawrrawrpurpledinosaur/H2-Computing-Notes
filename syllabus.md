@@ -1,32 +1,32 @@
 ## H2 Computing Syllabus
 
 ## 1.1 Algorithmic Representation 
-[comment]: Refer to Introduction.pdf (add link)
 Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf)
 
 ## 1.2 Fundamental Algorithms <a name="1.2"></a>
-### 1.2.1 Implement sort [algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/sorting.py)
+### 1.2.1 Implement [sort algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/sorting.py)
 - Bubble sort 
 - Bubble sort using last exchange index 
 - Insertion sort  
 - Quick sort 
 - Merge sort 
 
-### 1.2.3 Implement search [algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/searching.py)
+### 1.2.3 Implement [search algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/searching.py)
 - Linear search 
 - Binary search 
 - Hash table search 
 
-### 1.2.2 & 1.2.4 Use examples to explain sort and search alogrithms
+### 1.2.2 & 1.2.4 Use examples to explain sort and search algorithms 
 
 ### 1.2.5 Compare and describe the efficiencies of the sort and search algorithms using Big-O notation for time complexity (worst case)
-| Algorithm | Time Complexity (worst case) | Space Complexity (Not tested) |
-|-----------|------------------------------|--------------------------------|
-| Bubble sort | O(n^2) | O(1) |
-| Bubble sort using last exchange index | O(n^2) | O(1) |
-| Insertion sort | O(n^2) | O(1) |
-| Quick sort | O(n^2) | O(log n) |
-| Merge sort | O(n log n) | O(n) |
+| Algorithm | Best Case | Average Case | Worst Case | Space Complexity (Not Tested)|
+|-----------|-----------|--------------|------------|-------------------------------|
+| Bubble Sort | O(n) | O(n^2) | O(n^2) | O(1) |
+| Bubble Sort (Last Exchange) | O(n) | O(n^2) | O(n^2) | O(1) |
+| Insertion Sort | O(n) | O(n^2) | O(n^2) | O(1) |
+| Quick Sort | O(n log n) | O(n log n) | O(n^2) | O(log n) |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
+
 
 ## 1.3 Data Structures <a name="1.3"></a>
 
@@ -34,7 +34,7 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 Static allocation: Memory is allocated before the program runs (compile time). Therefore, size and type of memory must be known in advance.
 Dynamic allocation: Memory is allocated at runtime as needed.
 
-### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and ciruclar) 
+### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and ciruclar) <a name="1.3.3"></a>
 
 ### 1.3.4 Understand the concept of a free space list
 Free space list: A list of memory locations that are not in use and are available for allocation.
@@ -42,13 +42,13 @@ Free space list: A list of memory locations that are not in use and are availabl
 ### 1.3.5 Create, update(edit, insert, delete) and serach operations for [linear linked list](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/linkedlist.py)
 Exclude: doubly linked list and ciruclar linked list
 
-### 1.3.6 Create, update(edit, insert, delete) and search operations for binary search tree
-Exclude: deletion of nodes from [binary search tree](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/tree.py)
+### 1.3.6 Create, update(edit, insert, delete) and search operations for [binary search tree](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/tree.py)
+Exclude: deletion of nodes from binary search tree
 
 ### 1.3.7 Understand pre-order, in-order and post-order tree traversal; and application of in-order tree traversal to binary search tree 
-pre-order: root, left, right
-in-order: left, root, right
-post-order: left, right, root
+pre-order: root, left, right </br>
+in-order: left, root, right </br>
+post-order: left, right, root </br>
 
 application of in-order traversal: 
 - Display all nodes in ascending order (sorted output) 
@@ -67,7 +67,7 @@ application of post-order traversal:
 
 ### 2.2.1 Types: integer, real, char, string, Boolean, arrays (1d and 2d)
 
-### 2.2.2 Library functions for I/O, string (concatenation and slicing) and mathematical operations (+-*/%**)
+### 2.2.2 Library functions for I/O, string (concatenation and slicing) and mathematical operations (+-*/%**) <a name="2.2.2"></a>
 ``` py
 import csv 
 with open('file.csv', 'r') as f:
@@ -105,11 +105,11 @@ graph TD
 ```
 ### 2.2.7 Understand the use of stacks in recursive programming
 The result of each recursive call is stored in a stack frame (which stores data necessary to execute the recursive function) until the base case is reached. The results are then popped off the stack frame and returned. </br>
-Refer to above table, when n = 0, factorial(0) = 1. This result is popped off the stack frame and returned to the previous call, where n = 1.
+Refer to above diagram, when n = 0, factorial(0) = 1. This result is popped off the stack frame and returned to the previous call, where n = 1.
 
 
 ## 2.3 Implementation
-Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), 1.3.3 and 2.2.2 (lazy hyperlink)
+Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), [1.3.3](#133), [2.2.2](#222)
 
 ## 2.4 Data Validation and Program Testing 
 
@@ -364,8 +364,6 @@ erDiagram
 
 ### 3.3.6 Understand how NoSQL database management system addresses the shortcomings of relational database management system (SQL).
 ### 3.3.7 Explain the applications of SQL and NoSQL.
-- SQL: 
-<li>  </li>
 ### 3.3.8 Use a programming language to work with both SQL and NoSQL databases. [Guide](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/static/Quick%20Reference%20Guide.pdf)
 ### 3.3.9 Understand the need for privacy and integrity of data.
 ### 3.3.10 Describe methods to protect data.
