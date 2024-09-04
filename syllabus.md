@@ -1,5 +1,6 @@
 ## H2 Computing Syllabus
 
+# Section 1: Algorithms and Data Structures 
 ## 1.1 Algorithmic Representation 
 Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf)
 
@@ -12,7 +13,7 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 - Merge sort 
 
 ### 1.2.3 Implement [search algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/searching.py)
-- Linear search 
+- Linear search
 - Binary search 
 - Hash table search 
 
@@ -34,21 +35,21 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 Static allocation: Memory is allocated before the program runs (compile time). Therefore, size and type of memory must be known in advance.
 Dynamic allocation: Memory is allocated at runtime as needed.
 
-### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and ciruclar) <a name="1.3.3"></a>
+### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="1.3.3"></a>
 
 ### 1.3.4 Understand the concept of a free space list
 Free space list: A list of memory locations that are not in use and are available for allocation.
 
-### 1.3.5 Create, update(edit, insert, delete) and serach operations for [linear linked list](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/linkedlist.py)
-Exclude: doubly linked list and ciruclar linked list
+### 1.3.5 Create, update(edit, insert, delete) and search operations for [linear linked list](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/linkedlist.py)
+Exclude: doubly linked list and circular linked list
 
 ### 1.3.6 Create, update(edit, insert, delete) and search operations for [binary search tree](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/tree.py)
 Exclude: deletion of nodes from binary search tree
 
 ### 1.3.7 Understand pre-order, in-order and post-order tree traversal; and application of in-order tree traversal to binary search tree 
-pre-order: root, left, right </br>
-in-order: left, root, right </br>
-post-order: left, right, root </br>
+pre-order: root, left, right\  
+in-order: left, root, right\  
+post-order: left, right, root\  
 
 application of in-order traversal: 
 - Display all nodes in ascending order (sorted output) 
@@ -59,6 +60,7 @@ application of pre-order traversal:
 application of post-order traversal:
 - Deletion of nodes (out of scope)
 
+# Section 2: Programming
 ## 2.1 Coding Standards
 ### 2.1.1 - 2.1.3 
 <li> Use Indentation and white space </li>
@@ -198,11 +200,12 @@ class Dog(Animal): # Dog inherits from Animal
 ### 2.5.4 Understand polymorphism and how it enables code generalisation
 Exclude: method overload and multiple inheritance
 
+# Section 3: Data and Information 
 ## 3.1 Data Representation 
 
 ### 3.1.1 Represent data in binary and hexadecimal forms
 
-### 3.1.2 Write programs to perform the conversion of positive ints between binary, denary and hexadecimal
+### 3.1.2 Write programs to perform the conversion of positive integers between binary, denary and hexadecimal
 Refer to !WIP [conversion.py](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/conversion_bin_den_hex.py)
 
 ## 3.2 Character Encoding
