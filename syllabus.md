@@ -91,24 +91,30 @@ def factorial(n):
 ```
 
 ### 2.2.6 Trace the steps and list results of recursive and non-recursive programs
-Example for above function, where n = 4:
-| n | factorial(n) |
-|---|--------------|
-| 4 | 4 * factorial(3) |
-| 3 | 3 * factorial(2) |
-| 2 | 2 * factorial(1) |
-| 1 | 1 * factorial(0) |
-| 0 | 1 |
-
+```mermaid 
+graph TD
+    A["factorial#40;4#41;"] --> B["factorial#40;3#41;"]
+    B --> C["factorial#40;2#41;"]
+    C --> D["factorial#40;1#41;"]
+    D --> E["factorial#40;0#41;"]
+    
+    E -->|"return 1"| D
+    D -->|"return 1 * 1 = 1"| C
+    C -->|"return 2 * 1 = 2"| B
+    B -->|"return 3 * 2 = 6"| A
+    A -->|"return 4 * 6 = 24"| F["Result: 24"]
+```
 ### 2.2.7 Understand the use of stacks in recursive programming
 The result of each recursive call is stored in a stack frame (which stores data necessary to execute the recursive function) until the base case is reached. The results are then popped off the stack frame and returned. </br>
 Refer to above table, when n = 0, factorial(0) = 1. This result is popped off the stack frame and returned to the previous call, where n = 1.
 
 
-## 2.3 Implementing Algorithms and Data Structures
-Literally everything in [1.2](#"1.2") and [1.3](#"1.3")
+## 2.3 Implementation
+Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), 1.3.3 and 2.2.2 (lazy hyperlink)
 
-### 2.4.1 Explain the difference between data validation and verification 
+## 2.4 Data Validation and Program Testing 
+
+### 2.4.1 - 2.4.2 Explain the difference between data validation and verification 
 Data validation: Checks if the data meets specific criteria or rules before it is processed, stored or used.
 Done using: 
 - range checks
@@ -121,20 +127,270 @@ Data verification: Cecks that data has been accurately and correctly transferred
 - Comparing 2 copies of data to ensure they are identical 
 - Cross checking data in a database with original source data
 
+### 2.4.3 Identify, explain and correct syntax, logic and runtime errors 
+Just pretend you are the computer and run through the code line by line.
+
 ### 2.4.4 Test cases using normal, abnroaml and extreme data or testing and debugging programs
+normal data: data that is within the expected range, eg: 0-100 for test scores
+abnormal data: unexpected data, eg: "hello", -1, 101 
+extreme data: data at the limits of the expected range, eg: 0, 100, 70 (A grade boundary value)
 
 ## 2.5 OOP 
 
+### 2.5.1 Define and understand classes and objects
+```py 
+class Person: # Obviously a class, a template for creating objects
+    def __init__(self, name, age):
+        self.name = name # Attributes of object
+        self.age = age
+
+    def introduction(self): # Method of object
+        print(f"Hi, my name is {self.name} and I am {self.age} years old.")
+
+david = Person("David", 20) # Object (omg david is an object confirmed?!?1?)
+```
+
 ### 2.5.2 Understand encapsulation and how classes support information hiding and implementation independence
+Encapsulation: 
+```py 
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number  # Private attribute
+        self.__balance = balance                # Private attribute
+
+    # Public method to access the balance
+    def get_balance(self):
+        return self.__balance
+
+    # Public method to deposit money
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"Deposited {amount}. New balance is {self.__balance}.")
+        else:
+            print("Invalid deposit amount.")
+
+    # Public method to withdraw money
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Withdrew {amount}. New balance is {self.__balance}.")
+        else:
+            print("Invalid withdrawal amount or insufficient balance.")
+```
 
 ### 2.5.3 Understand inheritance and how it promotes software reuse
+```py 
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print("I am an animal.")
+
+class Dog(Animal): # Dog inherits from Animal
+    def __init__(self, name):
+        super().__init__(name)
+
+    def speak(self): # Overriding the speak method, polymorphism
+        print("Woof woof!")
+```
 
 ### 2.5.4 Understand polymorphism and how it enables code generalisation
 Exclude: method overload and multiple inheritance
 
+## 3.1 Data Representation 
+
+### 3.1.1 Represent data in binary and hexadecimal forms
+
 ### 3.1.2 Write programs to perform the conversion of positive ints between binary, denary and hexadecimal
+Refer to !WIP [conversion.py](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/conversion_bin_den_hex.py)
+
+## 3.2 Character Encoding
+
+## 3.2.1 Give examples of where or how Unicode is used
+From ChatGPT:
+```
+Unicode is a universal character encoding standard that represents text in most of the world's writing systems. It assigns a unique code point to every character, regardless of platform, program, or language.
+Here are some examples of where and how Unicode is used:
+
+1. Web Development
+HTML and XML: Unicode is the default encoding for web content. All modern browsers support Unicode, enabling web pages to display text in different languages, special symbols, and emojis.
+Example: The HTML entity &#9731; represents the Unicode character for a snowflake (❆).
+JavaScript and CSS: Unicode can be used in JavaScript and CSS to work with various characters and symbols.
+Example: In CSS, the content property can use Unicode to display symbols: content: "\00A9"; displays the copyright symbol (©).
+
+2. Operating Systems
+File Systems: Most modern operating systems (Windows, macOS, Linux) support Unicode for file names and paths, allowing users to name files and folders in multiple languages or with special characters.
+Example: A user can create a file named "Résumé.txt" on their computer, and it will be correctly handled and displayed.
+Command Line Interfaces: Unicode allows the command line to display characters from different scripts and symbols.
+Example: The Windows Terminal or Unix-based terminals can display various Unicode characters, such as accented letters or emojis.
+
+3. Programming Languages
+String Handling: Programming languages like Python, Java, JavaScript, and many others use Unicode for string handling. This ensures that applications can handle a wide range of characters from different languages.
+Example: In Python, you can define a Unicode string: u = "こんにちは"
+```
+
+### 3.2.2 Use ASCII code in programs 
+```py 
+def caesar_cipher(text): #ROT 13 
+    result = ""
+    for char in text:
+        if char.isalpha():
+            ascii_code = ord(char)
+            if char.islower():
+                ascii_code = (ascii_code - 97 + 13) % 26 + 97
+            else:
+                ascii_code = (ascii_code - 65 + 13) % 26 + 65
+            result += chr(ascii_code)
+        else:
+            result += char
+    return result
+```
 
 ## 3.3 DBMS
 
-1. Attributes of DB: table, record, field
-2. Purpose and use of primary, secondary, composite and foreign keys
+### 3.3.1 Determine the attributes of a database: table, record and field.
+- Table: A collection of records (rows) 
+- Record: A collection of fields (columns)
+- Field: A single piece of data in a record
+
+### 3.3.2 Explain the purpose of and use primary, secondary, composite and foreign keys in tables.
+- Primary key: A unique identifier for each record in a table 
+- Composite key: A combination of 2 or more columns that uniquely identifies a record
+- Foreign key: A column in a table that references the primary key in another table
+
+### 3.3.3 Explain with examples, the concept of data redundancy and data dependency.
+Data redundancy: Same data stored more than once 
+Data dependency: When data in one table depends on data in another table, eg: foreign keys
+
+### 3.3.4 Reduce data redundancy to third normal form (3NF).
+1NF: Each column in a table must be atomic (single value)
+| STUDENTID | NAME | SUBJECT | 1 NF? |
+|-----------|------|---------|-------|
+| 1         | John | Math, Econs   | No    |
+| 1         | John | Math          | Yes   |
+
+2NF: Table must be in 1NF and all non-key attributes must be fully dependent on the primary key 
+| STUDENTID | NAME | SUBJECTID | TEACHER |
+|-----------|------|---------|---------|
+| 1         | John | 1       | Mr Tan  |
+| 1         | John | 2       | Mr Lim  |
+
+In this example, (STUDENTID, SUBJECTID) is composite key. However, TEACHER only depends on subject, therefore it is not in 2NF.</br> 
+To resolve this, we can split the table into 2: 
+| STUDENTID | NAME | SUBJECTID |
+|-----------|------|---------|
+| 1         | John | 1       |
+| 1         | John | 2       |
+
+| SUBJECTID | TEACHER |
+|-----------|---------|
+| 1         | Mr Tan  |
+| 2         | Mr Lim  |
+
+3NF: Table must be in 2NF and no transitive dependencies (non-key attributes depend on other non-key attributes)
+| STUDENTID | SUBJECTID | EXAMNAME | TOTALMARKS |
+|-----------|-----------|----------|------------|
+| 1         | 1         | Midterm  | 50         |
+| 1         | 1         | Final    | 100        |
+
+Here, TOTALMARKS depends on EXAMNAME, which is not a key. To resolve this, we can split the table into 2:
+| STUDENTID | SUBJECTID | EXAMNAME |
+|-----------|-----------|----------|
+| 1         | 1         | Midterm  |
+| 1         | 1         | Final    |
+
+| EXAMNAME | TOTALMARKS |
+|----------|------------|
+| Midterm  | 50         |
+| Final    | 100        |
+
+
+### 3.3.5 Draw entity-relationship (ER) diagrams to show the relationship between tables.
+```mermaid 
+erDiagram
+    PERSON ||--|| PASSPORT : has
+    AUTHOR ||--|{ BOOK : writes
+    BOOK }|--|| PUBLISHER : "published by"
+    STUDENT ||--|{ STUDENT_CLASS : has
+    CLASS ||--|{ STUDENT_CLASS : contains
+
+    
+    PERSON {
+        int person_id
+        string name
+        date birth_date
+    }
+    PASSPORT {
+        int passport_id
+        int person_id
+        string passport_number
+        date expiry_date
+    }
+    AUTHOR {
+        int author_id
+        string name
+        string biography
+    }
+    BOOK {
+        int book_id
+        string title
+        int author_id
+        int publisher_id
+    }
+    PUBLISHER {
+        int publisher_id
+        string name
+        string address
+    }
+    STUDENT {
+        int student_id
+        string name
+        string email
+    }
+    CLASS {
+        int class_id
+        string class_name
+        string semester
+        int max_capacity
+    }
+    STUDENT_CLASS {
+        int student_class_id
+        int student_id
+        int class_id
+        date enrollment_date
+    }
+```
+
+### 3.3.6 Understand how NoSQL database management system addresses the shortcomings of relational database management system (SQL).
+### 3.3.7 Explain the applications of SQL and NoSQL.
+### 3.3.8 Use a programming language to work with both SQL and NoSQL databases.
+### 3.3.9 Understand the need for privacy and integrity of data.
+### 3.3.10 Describe methods to protect data.
+### 3.3.11 Explain the difference between backup and archive.
+### 3.3.12 Describe the need for version control and naming convention.
+### 3.3.13 Explain how data in Singapore is protected under the Personal Data Protection Act to govern the
+collection, use and disclosure of personal data. 
+
+## 3.4 Social, Ethical, Legal and Economic Issues
+
+left intentionally blank
+
+
+# Section 4: Computer Networks
+
+## 4.1 Fundamentals of Computer Networks
+
+### 4.1.1 Explain the concepts of LAN, WAN, intranet and the structure of the internet.
+- LAN: Local Area Network, a network that connects computers in a small area, eg: home, school, office
+- WAN: Wide Area Network, a network that connects computers over a large geographical area, eg: country, continent
+- Intranet: A private network that is only accessible to an organization's staff
+
+### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
+
+### 4.1.3 Explain the need for communication protocols in a network.
+### 4.1.4 Explain how data is transmitted in a packet-switching network.
+### 4.1.5 Explain client-server architecture.
+### 4.1.6 Implement an iterative server with socket programming. Given the server code, students should be able to implement the client code for a given scenario, and vice-versa, e.g. for a tic-tac-toe game. 
+

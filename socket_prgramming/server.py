@@ -9,7 +9,7 @@ s.listen()
 conn, addr = s.accept()
 print(f"Connection from {addr} has been established")
 
-conn.send("".encode())
+conn.send(" ".encode())
 
 while True:
     data = conn.recv(1024).decode()
