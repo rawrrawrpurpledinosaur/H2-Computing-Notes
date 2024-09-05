@@ -438,7 +438,7 @@ left intentionally blank
 |-------------------|-------------|
 | Firewall | A system to prevent unauthorized access from entering a private netowrk. Monitors and controls all incoming and outgoing traffic |
 | Proxy Server | 
-```mermaid 
+```mermaid
 sequenceDiagram
     participant Client
     participant Proxy Server
@@ -450,12 +450,8 @@ sequenceDiagram
     Destination Server->>Proxy Server: Send response
     Proxy Server->>Proxy Server: Process response
     Proxy Server->>Client: Forward response
-``` |
-
 ```
-```
-```
-
+| VPN | Virtual Private Network, similar to proxy. Unblocks censored websites and adds encryption on data transmitted in and out. VPN controls at the network level, while proxy controls at application level.
 ### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
 ### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
 
