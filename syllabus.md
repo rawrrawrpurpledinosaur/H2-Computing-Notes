@@ -412,10 +412,49 @@ left intentionally blank
 
 ## 4.3 Network Security
 ### 4.3.1 Understand how malware (e.g. worms and viruses) and denial of service (DOS) attacks can compromise computer systems.
-#### Malware: Malicious software that aims to damage computer systems and gain unauthorized access to use them 
+#### Malware: \[Mal\]icious soft\[ware\] that aims to damage computer systems and gain unauthorized access to use them 
 | Malware | Description |
 |---------|-------------|
 | Virus | <li>A program that replicates itself by attaching to other programs </li> <li>Remains dormant till executed </li> <li>Replicate itself to infect other machines </li>|
+| Worm | <li>Similar to virus</li> <li>Self Replicating</li> <li>No need to attach itself to a file/program</li>
+| Trojan Horse | <li>Apepars as legitimate</li> <li>Runs malicious codes to damage machine after gaining access</li>
+| Ransomware | <li>Encrypts files and demands ransom for decryption key</li>
+| Adware | <li>Software to spam advertisements</li>
+| Spyware| <li>Hidden program that secretly collects info & transmits info to attackers without user knowledge, eg: keylogger </li> |
+
+#### Denial of Service (DOS) Attack:
+- DOS attacks network to exhaust resource and bandwidth 
+- System fails to fulfil legitimate requests
+- Distributed DOS (DDOS) uses multiple computers (botnet) to attack a single target
+
+#### Social Engineering: 
+- Use of deception and trickery to convince users to provide access/data/violate security, eg: phishing, spam
+
+| Protection as user | Protection as developer |
+|--------------------|-------------------------|
+| <li>Keep OS updated</li><li>Antivirus software</li><li>Backup and archieve importrant documents</li><li>Don't click on suspicious links/emails</li><li>Don't connect to untrusted public wifi</li> | <li>Firewall</li><li>Proxy Server</li><li>VPN</li><li>Intrusion Detection System (IDS)</li><li>Intrution Protection System (IPS)</li>
+
+| Protection scheme | Description |
+|-------------------|-------------|
+| Firewall | A system to prevent unauthorized access from entering a private netowrk. Monitors and controls all incoming and outgoing traffic |
+| Proxy Server | 
+```mermaid 
+sequenceDiagram
+    participant Client
+    participant Proxy Server
+    participant Destination Server
+
+    Client->>Proxy Server: Send request
+    Proxy Server->>Proxy Server: Process request
+    Proxy Server->>Destination Server: Forward request
+    Destination Server->>Proxy Server: Send response
+    Proxy Server->>Proxy Server: Process response
+    Proxy Server->>Client: Forward response
+``` |
+
+```
+```
+```
 
 ### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
 ### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
