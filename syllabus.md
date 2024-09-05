@@ -2,8 +2,7 @@
 
 # Section 1: Algorithms and Data Structures 
 ## 1.1 Algorithmic Representation 
-Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf)
-
+Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf))
 ## 1.2 Fundamental Algorithms <a name="1.2"></a>
 ### 1.2.1 Implement [sort algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/sorting.py)
 - Bubble sort 
@@ -20,13 +19,13 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 ### 1.2.2 & 1.2.4 Use examples to explain sort and search algorithms 
 
 ### 1.2.5 Compare and describe the efficiencies of the sort and search algorithms using Big-O notation for time complexity (worst case)
-| Algorithm | Best Case | Average Case | Worst Case | Space Complexity (Not Tested)|
-|-----------|-----------|--------------|------------|-------------------------------|
-| Bubble Sort | O(n) | O(n^2) | O(n^2) | O(1) |
-| Bubble Sort (Last Exchange) | O(n) | O(n^2) | O(n^2) | O(1) |
-| Insertion Sort | O(n) | O(n^2) | O(n^2) | O(1) |
-| Quick Sort | O(n log n) | O(n log n) | O(n^2) | O(log n) |
-| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
+| Algorithm | Best Case | Average Case | Worst Case |
+|-----------|-----------|--------------|------------
+| Bubble Sort | O(n) | O(n^2) | O(n^2) |
+| Bubble Sort (Last Exchange) | O(n) | O(n^2) | O(n^2) |
+| Insertion Sort | O(n) | O(n^2) | O(n^2) |
+| Quick Sort | O(n log n) | O(n log n) | O(n^2) |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) |
 
 
 ## 1.3 Data Structures <a name="1.3"></a>
@@ -35,7 +34,7 @@ Refer to [Introduction](https://github.com/rawrrawrpurpledinosaur/revision_py_fi
 Static allocation: Memory is allocated before the program runs (compile time). Therefore, size and type of memory must be known in advance.
 Dynamic allocation: Memory is allocated at runtime as needed.
 
-### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="1.3.3"></a>
+### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="stack_queue"></a>
 
 ### 1.3.4 Understand the concept of a free space list
 Free space list: A list of memory locations that are not in use and are available for allocation.
@@ -111,7 +110,7 @@ Refer to above diagram, when n = 0, factorial(0) = 1. This result is popped off 
 
 
 ## 2.3 Implementation
-Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), [1.3.3](#133), [2.2.2](#222)
+Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), [1.3.3](#stack_queue), [2.2.2](#222)
 
 ## 2.4 Data Validation and Program Testing 
 
@@ -124,14 +123,14 @@ Done using:
 - presence check
 - check digit
 
-Data verification: Cecks that data has been accurately and correctly transferred, copied or processed. 
+Data verification: Checks that data has been accurately and correctly transferred, copied or processed. 
 - Comparing 2 copies of data to ensure they are identical 
 - Cross checking data in a database with original source data
 
 ### 2.4.3 Identify, explain and correct syntax, logic and runtime errors 
 Just pretend you are the computer and run through the code line by line.
 
-### 2.4.4 Test cases using normal, abnroaml and extreme data or testing and debugging programs
+### 2.4.4 Test cases using normal, abnormal and extreme data or testing and debugging programs
 normal data: data that is within the expected range, eg: 0-100 for test scores
 abnormal data: unexpected data, eg: "hello", -1, 101 
 extreme data: data at the limits of the expected range, eg: 0, 100, 70 (A grade boundary value)
@@ -206,11 +205,11 @@ Exclude: method overload and multiple inheritance
 ### 3.1.1 Represent data in binary and hexadecimal forms
 
 ### 3.1.2 Write programs to perform the conversion of positive integers between binary, denary and hexadecimal
-Refer to !WIP [conversion.py](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/conversion_bin_den_hex.py)
+Refer to [conversion.py](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/conversion_bin_den_hex.py)
 
 ## 3.2 Character Encoding
 
-## 3.2.1 Give examples of where or how Unicode is used
+### 3.2.1 Give examples of where or how Unicode is used
 From ChatGPT:
 ```
 Unicode is a universal character encoding standard that represents text in most of the world's writing systems. It assigns a unique code point to every character, regardless of platform, program, or language.
@@ -390,6 +389,8 @@ left intentionally blank
 - LAN: Local Area Network, a network that connects computers in a small area, eg: home, school, office
 - WAN: Wide Area Network, a network that connects computers over a large geographical area, eg: country, continent
 - Intranet: A private network that is only accessible to an organization's staff
+- Internet: A global network of networks that connects millions of devices worldwide
+
 
 ### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
 - IP Addressing: A unique identifier for each device connected to a Network 
