@@ -412,6 +412,8 @@ left intentionally blank
 
 ## 4.3 Network Security
 ### 4.3.1 Understand how malware (e.g. worms and viruses) and denial of service (DOS) attacks can compromise computer systems.
+### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
+
 #### Malware: \[Mal\]icious soft\[ware\] that aims to damage computer systems and gain unauthorized access to use them 
 | Malware | Description |
 |---------|-------------|
@@ -437,9 +439,15 @@ left intentionally blank
 | Protection scheme | Description |
 |-------------------|-------------|
 | Firewall | A system to prevent unauthorized access from entering a private netowrk. Monitors and controls all incoming and outgoing traffic |
-| Proxy Server | 
+| Proxy Server | Refer to diagram below |
+| VPN | Virtual Private Network, similar to proxy. Unblocks censored websites and adds encryption on data transmitted in and out. VPN controls at the network level, while proxy controls at application level.
+| Intrusion Detection System (IDS) | Monitors network traffic for malicious activities or policy violations, sounds an alert but **no action** |
+| Intrusion Protection System (IPS) | Monitors network traffic for malicious activities or policy violations, sounds an alert and **takes action**, by dropping packets, resetting connections, alert or quarantine |
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#007bff', 'secondaryColor': '#6c757d', 'tertiaryColor': '#28a745'}}}%%
+
 sequenceDiagram
+    title Proxy Server Communication Flow
     participant Client
     participant Proxy Server
     participant Destination Server
@@ -451,8 +459,20 @@ sequenceDiagram
     Proxy Server->>Proxy Server: Process response
     Proxy Server->>Client: Forward response
 ```
-| VPN | Virtual Private Network, similar to proxy. Unblocks censored websites and adds encryption on data transmitted in and out. VPN controls at the network level, while proxy controls at application level.
-### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
 ### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
+#### Encryption: Encoding a message, such that only authorized parties can access it 
+- Sender uses secret key and encryption algorithm to encrypt message
+- Receiver uses secret key and decryption algorithm to decrypt message
 
+#### Symmetric Encryption: Same key used for encryption and decryption
+- Fast but low security
 
+#### Asymmetric Encryption: 
+- Public and private key, mathematically related 
+- Cannot be derived from each other 
+- Slower but more secure
+1. Sender uses receiver's public key to encrypt 
+2. Recv uses private key to decrypt 
+
+#### Electronic Signature:
+- Paper signature but digitized 
