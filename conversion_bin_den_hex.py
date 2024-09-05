@@ -7,6 +7,7 @@ def denary_to_binary(n):
         binary = str(n % 2) + binary
         # same as floor division
         n = n >> 1
+    return binary
 
 def binary_to_denary(n: str) -> int:
     den = 0
@@ -27,7 +28,7 @@ def denary_to_hex(n):
             hex = str(rem) + hex
         else:
             hex = chr(rem + 55) + hex
-        n = n >> 4
+        n//=16
     return hex
 
 def hex_to_denary(n: str) -> int:
@@ -35,5 +36,7 @@ def hex_to_denary(n: str) -> int:
     for i in range(len(n)):
         if n[i].isdigit():
             den = den + int(n[i]) * 16**(len(n)-1-i)
+        else: 
+            den = den + (ord(n[i])-55) * 16**(len(n)-1-i)
     return den
 
