@@ -68,7 +68,7 @@ application of post-order traversal:
 
 ### 2.2.1 Types: integer, real, char, string, Boolean, arrays (1d and 2d)
 
-### 2.2.2 Library functions for I/O, string (concatenation and slicing) and mathematical operations (+-*/%**) <a name="2.2.2"></a>
+### 2.2.2 Library functions for I/O, string (concatenation and slicing) and mathematical operations (+-*/%**) <a name="lib"></a>
 ``` py
 import csv 
 with open('file.csv', 'r') as f:
@@ -110,7 +110,7 @@ Refer to above diagram, when n = 0, factorial(0) = 1. This result is popped off 
 
 
 ## 2.3 Implementation
-Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), [1.3.3](#stack_queue), [2.2.2](#222)
+Literally everything in [1.2](#12-fundamental-algorithms-), [1.3](#13-data-structures-), [1.3.3](#stack_queue), [2.2.2](#lib)
 
 ## 2.4 Data Validation and Program Testing 
 
@@ -379,7 +379,6 @@ erDiagram
 
 left intentionally blank
 
-
 # Section 4: Computer Networks
 
 ## 4.1 Fundamentals of Computer Networks
@@ -413,5 +412,8 @@ left intentionally blank
 
 ## 4.3 Network Security
 ### 4.3.1 Understand how malware (e.g. worms and viruses) and denial of service (DOS) attacks can compromise computer systems.
+#### Malware: 
 ### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
 ### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
+
+
