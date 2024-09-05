@@ -398,7 +398,18 @@ left intentionally blank
 ### 4.1.3 Explain the need for communication protocols in a network.
 ### 4.1.4 Explain how data is transmitted in a packet-switching network.
 ### 4.1.5 Explain client-server architecture.
+C-S Network: One or more devices act as a server\  
+Server: 
+- Centralised storage area for resources 
+- Provides service to clients in the network, and is only dedicated to such tasks
+- Controls access to resources on the network 
+- Filters network traffic 
+Client: 
+- Sends request to server and server responds accordingly 
+- Does not share any resources 
+
 ### 4.1.6 Implement an iterative server with socket programming. Given the server code, students should be able to implement the client code for a given scenario, and vice-versa, e.g. for a tic-tac-toe game. 
+Refer to [socket programming](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/socket_prgramming)
 
 ## 4.2 Web Applications 
 ### 4.2.1 Describe the differences between web applications and native applications.
