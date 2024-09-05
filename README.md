@@ -9,17 +9,8 @@ Contains sorting and searching algorithms and their implementations in Python
 Contains the implementation of data structures like binary tree, linked list, stack and queue
 4. [Mongodb](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/mongodb) and [SQLite3](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/sqlite3)
 All database related. Also refer to [Quick Reference Guide](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/blob/main/static/Quick%20Reference%20Guide.pdf)
-5. [Web](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/web)
+5. [Web](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/web)  
 Html, CSS, Flask 
 
 6. Misc files like the conversion of number systems and general python tips (WIP)
 
-## Contributing 
-```
-git clone https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes.git 
-cd H2-Computing-Notes
-make changes
-git add .
-git commit -m "[Message detailing changes]"
-git push 
-```
