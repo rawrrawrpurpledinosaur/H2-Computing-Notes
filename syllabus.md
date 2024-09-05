@@ -2,7 +2,7 @@
 
 # Section 1: Algorithms and Data Structures 
 ## 1.1 Algorithmic Representation 
-Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf))
+Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_files/static/Introduction.pdf)) (took this out due to it being school document)
 ## 1.2 Fundamental Algorithms <a name="1.2"></a>
 ### 1.2.1 Implement [sort algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/sorting.py)
 - Bubble sort 
@@ -398,12 +398,12 @@ left intentionally blank
 ### 4.1.3 Explain the need for communication protocols in a network.
 ### 4.1.4 Explain how data is transmitted in a packet-switching network.
 ### 4.1.5 Explain client-server architecture.
-C-S Network: One or more devices act as a server\  
+C-S Network: One or more devices act as a server  
 Server: 
 - Centralised storage area for resources 
 - Provides service to clients in the network, and is only dedicated to such tasks
 - Controls access to resources on the network 
-- Filters network traffic 
+- Filters network traffic  
 Client: 
 - Sends request to server and server responds accordingly 
 - Does not share any resources 
@@ -411,7 +411,7 @@ Client:
 ### 4.1.6 Implement an iterative server with socket programming. Given the server code, students should be able to implement the client code for a given scenario, and vice-versa, e.g. for a tic-tac-toe game. 
 Refer to [socket programming](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/socket_prgramming)
 
-## 4.2 Web Applications 
+## 4.2 [Web Applications](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/web)
 ### 4.2.1 Describe the differences between web applications and native applications.
 ### 4.2.2 State and apply usability principles in the design of web applications.
 ### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to: 
