@@ -403,16 +403,20 @@ left intentionally blank
 ## 4.2 Web Applications 
 ### 4.2.1 Describe the differences between web applications and native applications.
 ### 4.2.2 State and apply usability principles in the design of web applications.
-### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to:
-– accept user input (text and image file uploads)
-– process the input on the local server
-– store and retrieve data
-– display the output (as formatted text/images/table).
+### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to: 
+- accept user input (text and image file uploads)
+- process the input on the local server
+- store and retrieve data
+- display the output (as formatted text/images/table).
 ### 4.2.4 Test a web application on a local server
 
 ## 4.3 Network Security
 ### 4.3.1 Understand how malware (e.g. worms and viruses) and denial of service (DOS) attacks can compromise computer systems.
-#### Malware: 
+#### Malware: Malicious software that aims to damage computer systems and gain unauthorized access to use them 
+| Malware | Description |
+|---------|-------------|
+| Virus | <li>A program that replicates itself by attaching to other programs </li> <li>Remains dormant till executed </li> <li>Replicate itself to infect other machines </li>|
+
 ### 4.3.2 Understand how firewall (filtering function), intrusion detection system (IDS) and intrusion prevention system (IPS) can be used to restrict network access, and their limitations.
 ### 4.3.3 Understand how encryption, digital signature, and authentication can ensure security of network applications.
 
