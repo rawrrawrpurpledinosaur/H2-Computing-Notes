@@ -385,9 +385,18 @@ left intentionally blank
 
 ### 4.1.1 Explain the concepts of LAN, WAN, intranet and the structure of the internet.
 - Network: A group of devices that are connected together to communicate and share resources
+    - Hardware: 
+        - Devices: Computers, projectors, printers, etc 
+        - Wireless Access Point: enable computers on a network to connect wirelessly 
+    - Software: 
+        - Network Operation System: controls network traffic and access to common network resources
+    - \+ Share resources, reduce duplication of resources, assist collaboration 
+    - \- Security risks, maintenance costs (hardware/bandwidth), complexity
 - LAN: Local Area Network, a network that connects computers in a small area, eg: home, school, office
 - WAN: Wide Area Network, a network that connects computers over a large geographical area, eg: country, continent
 - Intranet: A private network that is only accessible to an organization's staff
+    - Protects sensitive information 
+    - Convenient for storing, organising, sharing and collaboration 
 - Internet: A global network of networks that connects millions of devices worldwide
 
 
@@ -413,12 +422,20 @@ Refer to [socket programming](https://github.com/rawrrawrpurpledinosaur/H2-Compu
 
 ## 4.2 [Web Applications](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/web)
 ### 4.2.1 Describe the differences between web applications and native applications.
+- Native apps are installed on the device 
+    - \+ Faster, access device resources, offline, safety and security, easy of development 
+    - \- Expensive to develop, maintaining app on multiple platforms(iOS, Android), approval by app store
+- Web apps are accessed via a web browser via internet 
+    - \+ No installation required, easy to maintain, auto update, faster to build, ease of launch 
+    - - Internet connection, slower, difficult to discover, higher risk and poor quality 
 ### 4.2.2 State and apply usability principles in the design of web applications.
+- idk what this means man 
 ### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to: 
 - accept user input (text and image file uploads)
 - process the input on the local server
 - store and retrieve data
-- display the output (as formatted text/images/table).
+- display the output (as formatted text/images/table).  
+Refer to [web app](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/tree/main/web) (!WIP)
 ### 4.2.4 Test a web application on a local server
 
 ## 4.3 Network Security
@@ -487,3 +504,15 @@ sequenceDiagram
 
 #### Electronic Signature:
 - Paper signature but digitized 
+
+#### Electronic Signature: 
+- Encryption and decryption technology that secures the data associated with a signed document and helps to verify the authenticity of the document 
+- Benefits: 
+    - Authentication: Message created by known sender 
+    - Non-repudiation: Sender cannot deny having sent the message 
+    - Integrity: Message not altered in transit 
+
+1. Sender hashes the message
+2. Sender encrypts the hash with private keys
+3. Receiver decrypts the hash with public key 
+4. Receiver hashes the message and compares with decrypted hash 
