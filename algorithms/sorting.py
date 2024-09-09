@@ -1,12 +1,23 @@
 from random import randint 
 
-
 def bubblesort(arr):
     n = len(arr)
     for i in range(n):
         for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+def bubblesort_optimized(arr):
+    # Uses last exchange index to check if array is already sorted
+    n = len(arr) - 1
+    while n > 0: 
+        last_exchange_index = 0 
+        for i in range(n):
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                last_exchange_index = i 
+        n = last_exchange_index 
     return arr
 
 def insertionsort(arr):
