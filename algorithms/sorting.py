@@ -1,4 +1,3 @@
-# Generate 4 functions, bubblesort, insertionsort, mergesort, quicksort. test each function using a randomly generated list of 10 integers 
 from random import randint 
 
 
