@@ -432,23 +432,35 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 - TCP and circuit switching both establish connection before transmission begins. However, TCP is preferred over UDP but packet switching is preferred over circuit switching.
 - This is because TCP provides more stable and secure connection compared to UDP
 
-#### Data link 
+#### Data link: Functionality to transmit packets from one device to another in the same network 
+- Protocol: Ethernet 
+    - Describes how devices format data for transmission to other devices on the same LAN
+    - MAC Address: Unique identifier for each device on a network 
+        - Physical address of device 
+        - Unique for each machine 
+        - 6 bytes (48 bits) in hexadecimal
 
-#### Physical
+#### Physical: Functionality to transmit individual bits through a transmission medium 
+- Wires bro 
 
-[//]: # (TODO: Finish)
 ### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
 - IP: Responsible for routing individual packet and addressing 
 - IP Addressing: A logical address that identifies each device on the network
 - IPv4: 32-bit (binary) address 
 | IPv4 classes | Range | Organizations |
 |--------------|-------|---------------|
-| Class A | idk if this is important | bleh |
+| Class A | 0 - 126 | Governments | 
+| Class B | 128 - 191 | Large and medium organizations |
+| Class C | 192 - 223 | Groups not qualifying for class A or B | 
+| Class D | 224 - 239 | Multicast | 
+| Class E | 240 - 255 | Experimentation) 
+| Localhost | 127 | Yourself |
+- IPv4 is split into network and host parts. Network (front 8-24 bits) identifies the network in which the device is located, while host (back 24-8 bits) identifies the device on the LAN
+- Also know that subnetting exists 
 
 - IPv6: 128-bit address, 8 groups of 4 hexadecimal digits separated by colons.
 
-# do dns and dhcp
-
+[//]: TODO: Explain dns and dhcp
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 - Communication Protocols: A set of rules that govern the exchange of data between devices in a network
