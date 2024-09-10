@@ -152,7 +152,7 @@ david = Person("David", 20) # Object (omg david is an object confirmed?!?1?)
 
 ### 2.5.2 Understand encapsulation and how classes support information hiding and implementation independence
 Encapsulation: 
-```py 
+```py
 class BankAccount:
     def __init__(self, account_number, balance):
         self.__account_number = account_number  # Private attribute
@@ -233,7 +233,7 @@ Example: In Python, you can define a Unicode string: u = "こんにちは"
 ```
 
 ### 3.2.2 Use ASCII code in programs 
-```py 
+```py
 def caesar_cipher(text): #ROT 13 
     result = ""
     for char in text:
@@ -397,15 +397,84 @@ left intentionally blank
 - Intranet: A private network that is only accessible to an organization's staff
     - Protects sensitive information 
     - Convenient for storing, organising, sharing and collaboration 
+
 - Internet: A global network of networks that connects millions of devices worldwide
+#### TCP/IP Model
+Some stuff before diving into the model: 
+1. Protocol: Set of rules that senders and recv agree to when communicating data 
+    - Eg: Data format, type, size
+    - Error detection and correction 
+2. Reasons for layering: 
+    - Simplifies network model 
+    - Enables programmers to specialize in a particular layer of the model 
+    - Provides design modularity 
+    - Allows standardized interfaces to be produced by networking vendors 
 
+Mnemonic: Always try new debugging procedures
+| Layer | Function |
+|-------|----------|
+| Application | High-level functionality to end users | 
+| Transport | Functionality to transmit messges between any 2 programs |
+| Network | Determine a route between 2 devices | 
+| Data Link | Transmit packets from one device to another in the same network| 
+| Physical | Transmit individual bits |
 
+#### Application: Provides high-level functionality to end users
+#### Transport: Functionality to transmit messages between any 2 programs
+[//]: TODO: Explain port and socket
+- Protocol: TCP/UDP
+    - Transmission Control Protocol (TCP): 
+        - Uses a 3 way handshake to establish a connection: SYN, SYN-ACK, ACK
+        - Breaks data into packets with sequential numbers for assembly at recv 
+
+#### Network
+Refer to explanation on [packet switching and circuit switching network](#packet)
+- TCP and circuit switching both establish connection before transmission begins. However, TCP is preferred over UDP but packet switching is preferred over circuit switching.
+- This is because TCP provides more stable and secure connection compared to UDP
+
+#### Data link 
+
+#### Physical
+
+[//]: # (TODO: Finish)
 ### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
-- IP Addressing: A unique identifier for each device connected to a Network 
-- DNS: A system that translates domain names to IP addresses
+- IP: Responsible for routing individual packet and addressing 
+- IP Addressing: A logical address that identifies each device on the network
+- IPv4: 32-bit (binary) address 
+| IPv4 classes | Range | Organizations |
+|--------------|-------|---------------|
+| Class A | idk if this is important | bleh |
+
+- IPv6: 128-bit address, 8 groups of 4 hexadecimal digits separated by colons.
+
+# do dns and dhcp
+
 
 ### 4.1.3 Explain the need for communication protocols in a network.
-### 4.1.4 Explain how data is transmitted in a packet-switching network.
+- Communication Protocols: A set of rules that govern the exchange of data between devices in a network
+
+### 4.1.4 Explain how data is transmitted in a packet-switching network. <a name="packet"></a>
+- Packet switching 
+    - Data is broken down into packets 
+    - Each packet is sent individually to the destination, taking the most efficient route
+    - Packets are reassembled at the destination
+    - Advantages:
+        - Efficient 
+        - Saves bandwidth 
+        - Secure as multiple routes are harder to track
+    - Disadvantages:
+        - Sequence of packets received may not be in in order 
+        - Requires assembly at destination
+
+- Circuit switching 
+    - A dedicated communication path (circuit) is established between 2 devices, and remains open until the communication ends. Eg: telephone call
+    - Advantages: 
+        - Guaranteed bandwidth 
+        - No data loss (as path is dedicated)
+        - Data sent in order 
+    - Disadvantages:
+        - Inefficient as path is open even when no data is being sent 
+
 ### 4.1.5 Explain client-server architecture.
 C-S Network: One or more devices act as a server  
 Server: 
