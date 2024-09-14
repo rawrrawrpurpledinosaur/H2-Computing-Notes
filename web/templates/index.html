@@ -1,13 +1,10 @@
-<!DOCTYPE html> 
-
-<html>
+<html> 
 <head>
-		<title>Web App</title>
-		<a href="{{ url_for('login') }}">Login</a>
-		<a href= "{{ url_for('register') }}">Register</a> 
-	</head>
-<body> 
-		<h1>Web App</h1>
-
-</body>
+    <title>Home</title>
+</head>
+  <body>
+    <p><a href="{{url_for('records')}}">Student health records </a></p>
+    <p><a href="{{url_for('stats')}}">Health record statistics</a></p>
+    <p><a href="{{url_for('add')}}">Add health record</a></p>
+  </body>
 </html>

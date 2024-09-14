@@ -1,0 +1,26 @@
+<html> 
+<head>
+    <title>Add record</title>
+</head>
+
+<body>
+    <form method="post" action="{{url_for('add')}}">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="gender">Gender: </label>
+      <input type="text" id="gender" name="gender" required>
+
+      <label for="id">Student ID: </label>
+      <input type="number" id="id" name="id" required>
+
+      <label for="Weight">Weight: </label>
+      <input type="number" step="0.1" id="weight" name="weight" required>
+      
+      <label for="Height">Height: </label>
+      <input type="number" step="0.01"id="height" name="height" required>
+
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

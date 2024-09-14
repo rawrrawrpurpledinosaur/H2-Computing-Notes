@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Weight</th>
+      <th>Height</th>
+    </tr>
+    {% for record in records %}
+    <tr>
+      <td>{{ record[0] }}</td>
+      <td>{{ record[1] }}</td>
+      <td>{{ record[2] }}</td>
+      <td>{{ record[3] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
