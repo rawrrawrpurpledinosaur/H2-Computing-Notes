@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+  <title>
+    Insert Data
+    </title>
+  </head>
+<body>
+    <form method="post" action="{{url_for('insert')}}">
+      <label for="bookID">bookID</label>
+      <input type="text" id="bookID" name="bookID">
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title">
+
+      <label for="price">Price</label>
+      <input type="number" step="0.01" id="price" name="price">
+
+      <label for="copies">Number of copies: </label>
+      <input type="number" id="copies" name="copies">
+
+      <button type="submit">Submit</button>
+    </form>
+
+
+
+  </body>
+
+
+</html>

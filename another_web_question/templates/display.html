@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body> 
+    <table> 
+      <tr>
+        <th>bookID</th>
+        <th>title</th>
+        <th>price</th>
+        <th>copies</th>
+      </tr> 
+      {% for book in res%}
+      <tr>
+        <td>{{book[0]}}</td>
+        <td>{{book[1]}}</td>
+        <td>{{book[2]}}</td>
+        <td>{{book[3]}}</td>
+      </tr>
+      {% endfor %}
+
+
+
+    </table>
+
+
+
+  </body>
+
+
+
+</html>
