@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Input end date of rental</h1>
+  <form method='post'>
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date">
+    <button type="submit">Submit</button>
+  </form>
+  {% if res %}
+  {% for re in res %}
+  <p> {{ re }} </p>
+  {% endfor %}
+  {% else %}
+  <p> No rentals due </p>
+  {% endif %}
+
+
+
+
+</body>
+
+
+
+</html>
