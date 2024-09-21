@@ -1,0 +1,18 @@
+TR24,Singapore,Melbourne,0230,1145
+TR25,Melbourne,Singapore,1245,1840
+TR978,Singapore,Hong Kong,1555,1955
+TR979,Hong Kong,Singapore,2055,0040
+TR808,Singapore,Tokyo,2215,0415
+TR809,Tokyo,Singapore,0815,1420
+TR578,Singapore,Chennai,2220,2355
+TR579,Chennai,Singapore,0120,0315
+TR280,Singapore,Bali,1550,1835
+TR281,Bali,Singapore,1935,2210
+TR424,Singapore,Penang,1430,1600
+TR425,Penang,Singapore,2220,2335
+TR604,Singapore,Bangkok,0620,0805
+TR605,Bangkok,Singapore,2310,0240
+TR390,Singapore,Manila,0200,0540
+TR391,Manila,Singapore,0655,1030
+TR302,Singapore,Ho Chi Minh City,1520,1645
+TR303,Ho Chi Minh City,Singapore,0905,1155

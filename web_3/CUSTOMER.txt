@@ -1,0 +1,16 @@
+1,Erik Bowen,M,11051990
+2,Windsor Elliott,M,26071978
+3,Siti Nurhaliza,F,09121994
+4,Ahmad Subagyo,M,31081982
+5,Dai Shirong,M,15051992
+6,Zeng Changming,M,07121988
+7,Wong Ka Yi,F,14031989
+8,Tony Leong,M,27061991
+9,Pham Minh Hoang,M,08111993
+10,Tran Thi Mai,F,01012005
+11,Shao Xingjuan,F,20021996
+12,Tan Wei Ming,M,20041997
+13,Anajali Patel,F,22071986
+14,Rajesh Kumar,M,12121979
+15,Yi Huifang,F,04032001
+16,Chan Hui Leng,F,03022000

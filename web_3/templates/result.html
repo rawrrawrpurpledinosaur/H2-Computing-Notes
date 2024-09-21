@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>DepartCity</th>
+      <th>ArrivalCity</th>
+      <th>Seat Type</th>
+    </tr>
+
+    {% for re in res %}
+    <tr>
+      <td>
+        {{ re[0] }}
+      </td>
+      <td>
+        {{ re[1] }}
+      </td>
+      <td>
+        {{ re[2] }}
+      </td>
+      <td>
+        {{ re[3] }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+
+
+</body>
+
+</html>
