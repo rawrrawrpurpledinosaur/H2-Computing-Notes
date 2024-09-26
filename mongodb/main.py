@@ -1,4 +1,4 @@
-import pymongo
+from pymongo import MongoClient
 import json
 
 # Connect to the database
@@ -9,7 +9,6 @@ db = client["travel"]
 collection = db["flights"]
 
 # Insert documents into db
-
 with open("flights.json", "r") as file:
     data = json.load(file)
     collection.insert_many(data)
