@@ -2,7 +2,7 @@ import pymongo
 import json
 
 # Connect to the database
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("localhost", 27017)
 
 db = client["travel"]
 
@@ -10,7 +10,7 @@ collection = db["flights"]
 
 # Insert documents into db
 
-with open("flights.json", "r") as file: 
+with open("flights.json", "r") as file:
     data = json.load(file)
     collection.insert_many(data)
 
@@ -23,7 +23,8 @@ collection.update_many({}, {"$mul": {"price": 0.9}})
 for x in collection.find():
     print(x)
 
-# Display city and price for flights less than 10 hours and $300 
-for x in collection.find({"duration": {"$lt": 10}, "price": {"$lt": 300}}, {"city": 1, "price": 1}):
-    print(x):q
-
+# Display city and price for flights less than 10 hours and $300
+for x in collection.find(
+    {"duration": {"$lt": 10}, "price": {"$lt": 300}}, {"city": 1, "price": 1}
+):
+    print(x)
