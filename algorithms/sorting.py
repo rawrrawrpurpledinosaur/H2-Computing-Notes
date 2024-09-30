@@ -43,10 +43,11 @@ def merge(left, right):
         if left[i] < right[j]:
             result.append(left[i])
             i += 1
+            # alternatively, result.append(left.pop(0)), same for right side
         else:
             result.append(right[j])
             j += 1
-    result.extend(left[i:])
+    result.extend(left[i:])  # this is adds leftover elements from left/right
     result.extend(right[j:])
     return result
 
