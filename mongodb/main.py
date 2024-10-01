@@ -23,7 +23,5 @@ for x in collection.find():
     print(x)
 
 # Display city and price for flights less than 10 hours and $300
-for x in collection.find(
-    {"duration": {"$lt": 10}, "price": {"$lt": 300}}, {"city": 1, "price": 1}
-):
+for x in collection.find({"duration": {"$lt": 10}, "price": {"$lt": 300}}, {"city": 1, "price": 1}):
     print(x)
