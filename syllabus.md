@@ -498,6 +498,12 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 - Packet/sequential number 
 - Protocol information 
 
+#### The role of switches and routers in a computer network: 
+- Switch uses MAC addresses to forward data frames between devices within the
+same network. 
+- Router uses IP addresses to send data packets between devices in
+different networks.
+
 ### 4.1.5 Explain client-server architecture.
 C-S Network: One or more devices act as a server  
 Server: 
