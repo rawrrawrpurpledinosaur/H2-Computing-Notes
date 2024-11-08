@@ -123,9 +123,10 @@ Done using:
 - presence check
 - check digit
 
-Data verification: Checks that data has been accurately and correctly transferred, copied or processed. 
-- Comparing 2 copies of data to ensure they are identical 
-- Cross checking data in a database with original source data
+Data verification: Checks that data entered is same as the original source 
+Done using: 
+- Double entry 
+- Proof reading 
 
 ### 2.4.3 Identify, explain and correct syntax, logic and runtime errors 
 Just pretend you are the computer and run through the code line by line.
