@@ -249,6 +249,7 @@ def caesar_cipher(text): #ROT 13
             result += char
     return result
 ```
+#### Prelim Question: Values that are common to both ASCII and Unicode: 0-127
 
 ## 3.3 DBMS
 
@@ -461,7 +462,11 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 
 - IPv6: 128-bit address, 8 groups of 4 hexadecimal digits separated by colons.
 
-[//]: TODO: Explain dns and dhcp
+#### How DNS works when you type a URL into a web browser and press enter. 
+1. Browser checks cache to see if it has a recently stored IP address for the domain. 
+2. If not, it sends a DNS query to a DNS server. 
+3. DNS server checks its own cache. 
+4. If not found, the server queries other DNS servers in a hierarchical manner, starting with the root DNS server, then top-level domain (TLD) servers, and finally the authoritative DNS servers for the domain.
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 - Communication Protocols: A set of rules that govern the exchange of data between devices in a network
