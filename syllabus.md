@@ -367,6 +367,10 @@ erDiagram
 ```
 
 ### 3.3.6 Understand how NoSQL database management system addresses the shortcomings of relational database management system (SQL).
+- NoSQL databases do not require a predefined schema, allowing for the storage of unstructured or semi-structured data. Advantageous for managing diverse types of information such as customer reviews, social media interactions, and real-time claims data, which may have varying formats and structures
+- NoSQL databases are designed to scale horizontally by adding more servers to distribute the load. Beneficial for handling large volumes of data and high transaction rates without significant performance degradation
+- NoSQL databases often support hierarchical data storage, where less frequently accessed data can be moved to more cost-effective storage solutions, optimizing storage costs and performance. 
+
 ### 3.3.7 Explain the applications of SQL and NoSQL.
 ### 3.3.8 Use a programming language to work with both SQL and NoSQL databases. [Guide](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/static/Quick%20Reference%20Guide.pdf)
 ### 3.3.9 Understand the need for privacy and integrity of data.
