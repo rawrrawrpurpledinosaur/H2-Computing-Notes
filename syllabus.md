@@ -467,6 +467,7 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 2. If not, it sends a DNS query to a DNS server. 
 3. DNS server checks its own cache. 
 4. If not found, the server queries other DNS servers in a hierarchical manner, starting with the root DNS server, then top-level domain (TLD) servers, and finally the authoritative DNS servers for the domain.
+5. Once the IP address is found, it is returned to the browser, which then uses it to establish a connection to the web server hosting the website. The browser sends an HTTP request to the web server, which responds with the requested webpage, and the browser displays it to the user. 
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 - Communication Protocols: A set of rules that govern the exchange of data between devices in a network
@@ -492,6 +493,7 @@ Refer to explanation on [packet switching and circuit switching network](#packet
         - Data sent in order 
     - Disadvantages:
         - Inefficient as path is open even when no data is being sent 
+#### What is stored in a packet header: 
 
 ### 4.1.5 Explain client-server architecture.
 C-S Network: One or more devices act as a server  
