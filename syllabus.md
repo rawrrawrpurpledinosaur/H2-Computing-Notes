@@ -494,6 +494,9 @@ Refer to explanation on [packet switching and circuit switching network](#packet
     - Disadvantages:
         - Inefficient as path is open even when no data is being sent 
 #### What is stored in a packet header: 
+- Source/destination address 
+- Packet/sequential number 
+- Protocol information 
 
 ### 4.1.5 Explain client-server architecture.
 C-S Network: One or more devices act as a server  
