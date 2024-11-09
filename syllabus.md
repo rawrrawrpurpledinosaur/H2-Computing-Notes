@@ -205,6 +205,11 @@ Exclude: method overload and multiple inheritance
 ## 3.1 Data Representation 
 
 ### 3.1.1 Represent data in binary and hexadecimal forms
+- Press calculator
+1. Mode -> 4 
+2. Go to base you want to convert something from (use DEC HEX BIN buttons above x^2 x^ and log)
+3. Enter number in Base N 
+4. Press the base you want to convert to 
 
 ### 3.1.2 Write programs to perform the conversion of positive integers between binary, denary and hexadecimal
 Refer to [conversion.py](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/conversion_bin_den_hex.py)
@@ -614,7 +619,6 @@ sequenceDiagram
     - Authentication: Message created by known sender 
     - Non-repudiation: Sender cannot deny having sent the message 
     - Integrity: Message not altered in transit 
-
 1. Sender hashes the message
 2. Sender encrypts the hash with private keys
 3. Receiver decrypts the hash with public key 
