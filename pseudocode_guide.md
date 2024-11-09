@@ -9,21 +9,21 @@
 ## 2. Nitty Gritty 
 ### 2.1 Declaring variables 
 ```DECLARE myVariable: INTEGER ```  
-```DECLARE myArray: ARRAY[1:10] OF INTEGER```
-```DECLARE my2DArray: ARRAY[1:10, 1:10] OF INTEGER```
+```DECLARE myArray: ARRAY[1:10] OF INTEGER```  
+```DECLARE my2DArray: ARRAY[1:10, 1:10] OF INTEGER```  
 ```CONSTANT myConstant = 69```
 
 ### 2.2 Assignment 
-```myVariable <- 69```
+```myVariable <- 69```  
 ```myVariable <- myVariable + 1```
 
 ### 2.3 Accessing arrays 
-```myArray[1] <- 69```
+```myArray[1] <- 69```  
 ```my2DArray[1, 1] <- "*"```
 
 ### 2.4 Input/Output (to "console")
-```INPUT myVariable```
-```OUTPUT myVariable```
+```INPUT myVariable```  
+```OUTPUT myVariable```  
 ```OUTPUT "Goodbye World"```
 
 
