@@ -198,6 +198,7 @@ class Dog(Animal): # Dog inherits from Animal
 ```
 
 ### 2.5.4 Understand polymorphism and how it enables code generalisation
+- Polymorphism enables a single method to be used in different ways depending on the object that invokes it 
 Exclude: method overload and multiple inheritance
 
 # Section 3: Data and Information 
@@ -618,3 +619,9 @@ sequenceDiagram
 2. Sender encrypts the hash with private keys
 3. Receiver decrypts the hash with public key 
 4. Receiver hashes the message and compares with decrypted hash 
+
+#### Authentication: 
+- Process of verifying the identity of a user or processes 
+1. Something you know: Password, PIN 
+2. Something you have: Smart card, token 
+3. Something you are: Biometric data 
