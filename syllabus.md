@@ -458,7 +458,7 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 ### 4.1.2 Understand the concepts of IP addressing and domain name server (DNS).
 - IP: Responsible for routing individual packet and addressing 
 - IP Addressing: A logical address that identifies each device on the network
-- IPv4: 32-bit (binary) address 
+- IPv4: 32-bit (binary) address  
 | IPv4 classes | Range | Organizations |
 |--------------|-------|---------------|
 | Class A | 0 - 126 | Governments | 
@@ -535,7 +535,7 @@ Refer to [socket programming](https://github.com/rawrrawrpurpledinosaur/H2-Compu
     - \- Expensive to develop, maintaining app on multiple platforms(iOS, Android), approval by app store
 - Web apps are accessed via a web browser via internet 
     - \+ No installation required, easy to maintain, auto update, faster to build, ease of launch 
-    - - Internet connection, slower, difficult to discover, higher risk and poor quality 
+    - \- Internet connection, slower, difficult to discover, higher risk and poor quality 
 ### 4.2.2 State and apply usability principles in the design of web applications.
 - idk what this means man 
 ### 4.2.3 Use HTML, CSS (for clients) and Python (for the server) to create a web application that is able to: 
