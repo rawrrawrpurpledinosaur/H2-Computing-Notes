@@ -39,7 +39,10 @@ Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_f
 Static allocation: Memory is allocated before the program runs (compile time). Therefore, size and type of memory must be known in advance.
 Dynamic allocation: Memory is allocated at runtime as needed.
 
+
 #### Benefits and drawbacks of static allocation 
+- Benefits 
+    - /
 ### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="stack_queue"></a>
 
 ### 1.3.4 Understand the concept of a free space list
@@ -52,9 +55,9 @@ Exclude: doubly linked list and circular linked list
 Exclude: deletion of nodes from binary search tree
 
 ### 1.3.7 Understand pre-order, in-order and post-order tree traversal; and application of in-order tree traversal to binary search tree 
-pre-order: root, left, right\  
-in-order: left, root, right\  
-post-order: left, right, root\  
+pre-order: root, left, right  
+in-order: left, root, right  
+post-order: left, right, root  
 
 application of in-order traversal: 
 - Display all nodes in ascending order (sorted output) 
@@ -158,7 +161,7 @@ david = Person("David", 20) # Object (omg david is an object confirmed?!?1?)
 ```
 
 ### 2.5.2 Understand encapsulation and how classes support information hiding and implementation independence
-Encapsulation: 
+Encapsulation: is the bundling of attributes and methods that operates on the class. It allows data hiding so that internal attributes will not be corrupted by external operations. 
 ```py
 class BankAccount:
     def __init__(self, account_number, balance):
@@ -204,7 +207,7 @@ class Dog(Animal): # Dog inherits from Animal
 ```
 
 ### 2.5.4 Understand polymorphism and how it enables code generalisation
-- Polymorphism enables a single method to be used in different ways depending on the object that invokes it 
+- Polymorphism enables a single method to be used in different ways depending on the object that invokes it  
 Exclude: method overload and multiple inheritance
 
 # Section 3: Data and Information 
@@ -214,7 +217,7 @@ Exclude: method overload and multiple inheritance
 - Press calculator
 1. Mode -> 4 
 2. Go to base you want to convert something from (use DEC HEX BIN buttons above x^2 x^ and log)
-3. Enter number in Base N 
+3. Enter number in Base N (for ABCDEF in HEX, use buttons below DEX HEX BIN, without pressing alpha), then press enter
 4. Press the base you want to convert to 
 
 ### 3.1.2 Write programs to perform the conversion of positive integers between binary, denary and hexadecimal
@@ -512,6 +515,12 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 - Communication Protocols: A set of rules that govern the exchange of data between devices in a network
+- Protocol is a set of rules to be followed by both sender and receiver. LANs need
+communication protocols to state a common rule for the format and structure of the data
+being transmitted, so that the recipient will be able to handle the message based on the
+protocol. 
+- Secondly, protocols are needed to provide a systematic template for network
+developers and vendors.
 
 ### 4.1.4 Explain how data is transmitted in a packet-switching network. <a name="packet"></a>
 - Packet switching 
