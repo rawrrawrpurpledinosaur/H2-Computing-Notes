@@ -12,7 +12,7 @@ Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_f
 - Merge sort 
 
 ### 1.2.3 Implement [search algorithms](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/algorithms/searching.py)
-- Linear search
+- Linear search 
 - Binary search 
 - Hash table search 
 
@@ -27,6 +27,11 @@ Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_f
 | Quick Sort | O(n log n) | O(n log n) | O(n^2) |
 | Merge Sort | O(n log n) | O(n log n) | O(n log n) |
 
+| Algorithm | Worst Case | 
+|-----------|------------|
+| Linear Search | O(n) |
+| Binary Search | O(log n) |
+| Hash Table Search | O(n) if collisions else O(1) | 
 
 ## 1.3 Data Structures <a name="1.3"></a>
 
