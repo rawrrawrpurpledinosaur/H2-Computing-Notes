@@ -42,7 +42,7 @@ Dynamic allocation: Memory is allocated at runtime as needed.
 
 #### Benefits and drawbacks of static allocation 
 - Benefits 
-    - /
+    - 
 ### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="stack_queue"></a>
 
 ### 1.3.4 Understand the concept of a free space list
@@ -130,7 +130,10 @@ Done using:
 - format check
 - lengths check 
 - presence check
-- check digit
+- check digit: Modulus 11 
+  1. Multiply each digit by given weight 
+  2. Sum all results and modulo 11 
+  3. If result is 0, check digit is 0, else 11 - result (if 11-result is 10, convention says to replace with X)
 
 Data verification: Checks that data entered is same as the original source 
 Done using: 
@@ -280,6 +283,7 @@ def caesar_cipher(text): #ROT 13
 
 ### 3.3.3 Explain with examples, the concept of data redundancy and data dependency.
 Data redundancy: Same data stored more than once 
+- Reducing data redundancy reduces the chance of data anomalies when inserting, updating or deleting data. 
 Data dependency: When data in one table depends on data in another table, eg: foreign keys
 
 ### 3.3.4 Reduce data redundancy to third normal form (3NF).
@@ -503,6 +507,7 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 3. DNS server checks its own cache. 
 4. If not found, the server queries other DNS servers in a hierarchical manner, starting with the root DNS server, then top-level domain (TLD) servers, and finally the authoritative DNS servers for the domain.
 5. Once the IP address is found, it is returned to the browser, which then uses it to establish a connection to the web server hosting the website. The browser sends an HTTP request to the web server, which responds with the requested webpage, and the browser displays it to the user. 
+
 #### How DHCP works
 - **D**iscover 
   - Client broadcast a message to find DHCP server 
@@ -526,14 +531,14 @@ developers and vendors.
 - Packet switching 
     - Data is broken down into packets 
     - Each packet is sent individually to the destination, taking the most efficient route
-    - Packets are reassembled at the destination
+    - Packets are assigned a sequential number and reassembled at the destination
     - Advantages:
         - Efficient 
         - Saves bandwidth 
         - Secure as multiple routes are harder to track
     - Disadvantages:
         - Sequence of packets received may not be in in order 
-        - Requires assembly at destination
+        - Requires assembly at destination, hence more time
 
 - Circuit switching 
     - A dedicated communication path (circuit) is established between 2 devices, and remains open until the communication ends. Eg: telephone call
