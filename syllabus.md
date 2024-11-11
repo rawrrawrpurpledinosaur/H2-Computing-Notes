@@ -390,7 +390,16 @@ erDiagram
 
 ## 3.4 Social, Ethical, Legal and Economic Issues
 
-left intentionally blank
+### PDPA (Only kept easy to rmb/logical ones)
+- Collection 
+  1. Notification: Organizations must inform individuals about the purpose of data collection and how it will be used. 
+  2. Consent: Individuals must give consent for their data to be collected, used, or disclosed. 
+  3. Purpose: Data should only be collected for specific, legitimate purposes and should not be used beyond these purposes without additional consent. 
+- Care 
+  1. Protection: Adequate security measures must be in place to protect personal data from unauthorized access, collection, use, disclosure, or loss. 
+  2. Retention Limitation: Personal data should only be retained as long as necessary to fulfill its purpose. Once no longer needed, it should be securely disposed of. 
+- Individual autonomy
+  1. Data Breach Notification: Organizations must notify affected individuals and relevant authorities in case of a data breach that could harm individuals.
 
 # Section 4: Computer Networks
 
