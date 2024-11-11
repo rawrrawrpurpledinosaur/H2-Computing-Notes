@@ -34,6 +34,7 @@ Refer to [Introduction]((https://github.com/rawrrawrpurpledinosaur/revision_py_f
 Static allocation: Memory is allocated before the program runs (compile time). Therefore, size and type of memory must be known in advance.
 Dynamic allocation: Memory is allocated at runtime as needed.
 
+#### Benefits and drawbacks of static allocation 
 ### 1.3.3 Create, insert and delete operations for [stack](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/stack.py) and [queue](https://github.com/rawrrawrpurpledinosaur/revision_py_files/blob/main/data_structures/queue.py) (linear and circular) <a name="stack_queue"></a>
 
 ### 1.3.4 Understand the concept of a free space list
@@ -508,11 +509,12 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 - Packet/sequential number 
 - Protocol information 
 
-#### The role of switches and routers in a computer network: 
+#### Switch, routers and modems 
 - Switch uses MAC addresses to forward data frames between devices within the
-same network. 
+same network. Operates at data link layer. 
 - Router uses IP addresses to send data packets between devices in
-different networks.
+different networks. Operates at network layer.
+- Modem converts digital signals to analog signals and vice versa. 
 
 ### 4.1.5 Explain client-server architecture.
 C-S Network: One or more devices act as a server  
