@@ -79,8 +79,8 @@ ENDWHILE
 ```
 
 ## 4 Useful stuff
-```
 ### 4.1 Procedures (does not return anything) 
+```
 PROCEDURE myFunction(param1: INTEGER, param2: INTEGER)
   <statements>
 ENDPROCEDURE 
