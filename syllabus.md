@@ -406,6 +406,13 @@ erDiagram
 - Individual autonomy
   1. Data Breach Notification: Organizations must notify affected individuals and relevant authorities in case of a data breach that could harm individuals.
 
+### Code of conduct (taken from chatgpt, non-exhaustive)
+1. Integrity 
+2. Confidentiality 
+3. Professionalism 
+4. Compliance with laws 
+5. Transparency 
+
 # Section 4: Computer Networks
 
 ## 4.1 Fundamentals of Computer Networks
