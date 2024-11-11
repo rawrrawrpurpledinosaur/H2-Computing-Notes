@@ -479,6 +479,15 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 3. DNS server checks its own cache. 
 4. If not found, the server queries other DNS servers in a hierarchical manner, starting with the root DNS server, then top-level domain (TLD) servers, and finally the authoritative DNS servers for the domain.
 5. Once the IP address is found, it is returned to the browser, which then uses it to establish a connection to the web server hosting the website. The browser sends an HTTP request to the web server, which responds with the requested webpage, and the browser displays it to the user. 
+#### How DHCP works
+- **D**iscover 
+  - Client broadcast a message to find DHCP server 
+- **O**ffer
+  - DHCP server offers IP address to client 
+- **R**equest 
+  - Client requests IP address from DHCP server 
+- **A**cknowledge 
+  - DHCP server acknowledges request and assigns IP address to client 
 
 ### 4.1.3 Explain the need for communication protocols in a network.
 - Communication Protocols: A set of rules that govern the exchange of data between devices in a network
