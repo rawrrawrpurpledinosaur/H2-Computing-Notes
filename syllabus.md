@@ -465,7 +465,7 @@ Refer to explanation on [packet switching and circuit switching network](#packet
 | Class B | 128 - 191 | Large and medium organizations |
 | Class C | 192 - 223 | Groups not qualifying for class A or B | 
 | Class D | 224 - 239 | Multicast | 
-| Class E | 240 - 255 | Experimentation) 
+| Class E | 240 - 255 | Experimentation |
 | Localhost | 127 | Yourself |
 - IPv4 is split into network and host parts. Network (front 8-24 bits) identifies the network in which the device is located, while host (back 24-8 bits) identifies the device on the LAN
 - Also know that subnetting exists 
