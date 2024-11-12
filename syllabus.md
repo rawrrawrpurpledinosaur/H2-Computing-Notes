@@ -114,8 +114,9 @@ graph TD
     A -->|"return 4 * 6 = 24"| F["Result: 24"]
 ```
 ### 2.2.7 Understand the use of stacks in recursive programming
-The result of each recursive call is stored in a stack frame (which stores data necessary to execute the recursive function) until the base case is reached. The results are then popped off the stack frame and returned. </br>
-Refer to above diagram, when n = 0, factorial(0) = 1. This result is popped off the stack frame and returned to the previous call, where n = 1.
+- Each time a recursive function, P, is called, an activation record is generated including its parameters, local variables and return address. 
+- This activation record is pushed onto the run-time stack. When a recursive version of P terminates, its activation record is popped from the stack. 
+- The top activation record in the stack is always the procedure currently executed.
 
 
 ## 2.3 Implementation
