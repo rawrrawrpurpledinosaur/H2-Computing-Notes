@@ -398,6 +398,15 @@ erDiagram
 - Backup: A copy of data that can be used to restore the original data in case of loss or corruption
 - Archive: A copy of data that is stored for long-term retention and is not intended to be used for recovery purposes
 ### 3.3.12 Describe the need for version control and naming convention.
+- Version control: A system that allows software teams to keep track of changes over time. 
+  - Allow for rollbacks when mistakes are made 
+  - Promotes collaboration 
+  - Eg: Git 
+  - Related: Semantic versioning. Follows the style: Major.Minor.Patch. Hints to users the type of changes made in the software.
+
+- Naming convention: A set of rules for choosing the character sequence for identifiers 
+  - Makes code more readable 
+
 ### 3.3.13 Explain how data in Singapore is protected under the Personal Data Protection Act to govern the collection, use and disclosure of personal data. 
 
 ## 3.4 Social, Ethical, Legal and Economic Issues
@@ -413,12 +422,11 @@ erDiagram
 - Individual autonomy
   1. Data Breach Notification: Organizations must notify affected individuals and relevant authorities in case of a data breach that could harm individuals.
 
-### Code of conduct (taken from chatgpt, non-exhaustive)
+### Code of conduct 
 1. Integrity 
-2. Confidentiality 
+2. Responsibility 
 3. Professionalism 
-4. Compliance with laws 
-5. Transparency 
+4. Competence 
 
 # Section 4: Computer Networks
 
@@ -620,7 +628,7 @@ Refer to [web app](https://github.com/rawrrawrpurpledinosaur/H2-Computing-Notes/
 
 | Protection scheme | Description |
 |-------------------|-------------|
-| Firewall | A system to prevent unauthorized access from entering a private netowrk. Monitors and controls all incoming and outgoing traffic |
+| Firewall | A system to prevent unauthorized access from entering a private netowrk. </br> Monitors and controls all incoming and outgoing traffic |
 | Proxy Server | Refer to diagram below |
 | VPN | Virtual Private Network, similar to proxy. Unblocks censored websites and adds encryption on data transmitted in and out. VPN controls at the network level, while proxy controls at application level.
 | Intrusion Detection System (IDS) | Monitors network traffic for malicious activities or policy violations, sounds an alert but **no action** |
@@ -648,6 +656,7 @@ sequenceDiagram
 
 #### Symmetric Encryption: Same key used for encryption and decryption
 - Fast but low security
+- Both parties have to share the key beforehand
 
 #### Asymmetric Encryption: 
 - Public and private key, mathematically related 
@@ -659,7 +668,7 @@ sequenceDiagram
 #### Electronic Signature:
 - Paper signature but digitized 
 
-#### Electronic Signature: 
+#### Digital Signature: 
 - Encryption and decryption technology that secures the data associated with a signed document and helps to verify the authenticity of the document 
 - Benefits: 
     - Authentication: Message created by known sender 
